@@ -9,6 +9,7 @@ int main()
  int x,A,B,C;
  cout <<"Enter number: \n";
  cin >>x;
+ if (x>999||x<100) {cout<<"Error 404"; return 1;}
  A=x/100; B=x/10-A*10; C=x-A*100-B*10;
  if((A<B&&B<C)||(A>B&&B>C)) cout<<"true";
  else cout<<"false";
