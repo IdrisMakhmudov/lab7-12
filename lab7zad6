@@ -1,0 +1,20 @@
+/*6. Даны целые числа a, b, c, являющиеся сторонами некоторого
+треугольника. Проверить истинность высказывания: «Треугольник со
+сторонами a, b, c является прямоугольным».*/
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+ int a,b,c,A,B,C;
+ cout <<"Enter a, b and c: \n";
+ cin >>a>>b>>c;
+ if (a<1||b<1||c<1||a+b<=c||a+c<=b||b+c<=a) cout<<"Error 404";
+ else {
+      A=pow(a,2); B=pow(b,2); C=pow(c,2);
+      if (sqrt(A+B)==c||sqrt(A+C)==b||sqrt(C+B)==a) cout<<"true";
+      else cout<<"false";
+ }
+return 0;
+}
