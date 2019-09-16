@@ -6,9 +6,9 @@ using namespace std;
 int main()
 {
  int A;
- cout <<"Enter A,B and C: \n";
- cin >>A>>B>>C;
- if(A<1) {cout<<"true"; return 1;}
- else cout<<"false";
+ cout <<"Enter A: \n";
+ cin >>A;
+ if(A>99||A<10||A%2==1) {cout<<"false"; return 1;}
+ else cout<<"true";
 return 0;
 }
