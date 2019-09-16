@@ -8,7 +8,7 @@ int main()
  int A;
  cout <<"Enter A: \n";
  cin >>A;
- if(A>99||A<10||A%2==1) {cout<<"false"; return 1;}
+ if(A>99||A<10||A%2==1) cout<<"false";
  else cout<<"true";
 return 0;
 }
