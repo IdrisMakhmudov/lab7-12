@@ -1,0 +1,14 @@
+/*1. Даны два целых числа: A, B. Проверить истинность высказывания:
+«Справедливы неравенства A > 2 и B ≤ 3»*/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+ double A,B;
+ cout <<"Enter A and B: \n";
+ cin >>A>>B;
+ if(A>2&&B<=3) cout<<"A>2 and B<=3";
+ else cout<<"Error 404";
+return 0;
+}
