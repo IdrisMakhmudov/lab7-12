@@ -1,0 +1,21 @@
+/*3. На плоскости расположены три точки: A, B, C. Определить, какая из
+двух последних точек (B или C) расположена ближе к A, и вывести эту точку
+и ее расстояние от точки A.*/
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    int x1,y1,x2,x3,y3,y2,L1,L2,a,b,c,d;
+    cout<<"Enter coordinater of point A: "; cin>>x1>>y1;
+    cout<<"Enter coordinater of point B: "; cin>>x2>>y2;
+    cout<<"Enter coordinater of point C: "; cin>>x3>>y3;
+    a=pow(x1-x2,2);
+    b=pow(x1-x3,2);
+    c=pow(y1-y2,2);
+    d=pow(y1-y3,2);
+    L1=sqrt(a+c); L2=sqrt(b+d);
+    if(L1<L2) cout<<"B, length: "<<L1;
+    else cout<<"C, length: "<<L2;
+    return 0;
+    }
