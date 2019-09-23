@@ -1,0 +1,21 @@
+/* 6. Дано целое число, лежащее в диапазоне 1–999. Вывести его
+строку-описание вида «четное двузначное число», «нечетное трехзначное
+число» и т. д.. */
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x;
+    cin>>x;
+    if (x>=1&&x<=999)
+    { if(x==0) cout<<"nulevoe";
+    else {
+        if(x%2==0) cout<<"chetnoe"; else cout<<"nechetnoe";
+        if(x>=100) cout<<" trehznachnoe";else cout<<" dvuznachnoe";
+        cout<<" chislo.";
+    }
+        
+    }
+    
+    return 0;
+    }
