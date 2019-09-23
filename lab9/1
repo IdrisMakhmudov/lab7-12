@@ -1,0 +1,21 @@
+/* 1. Дан номер дня – целое число от 1 до 31 и месяца — целое число в
+диапазоне 1–12 (1 — январь, 2 — февраль и т. д.). Вывести дату в виде текста
+(например, «пятое января»). */
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x,y;
+    cin>>x>>y;
+    if(x>0&&x<32&&y>0&&y<13) {
+    string day[31]={"pervoe", "vtoroе", "tret'e", "chetvertoe", "pyatoe", "shestoe", "sed'moe", "vos'moe", 
+"devyatoe", "desyatoe", "odinnadtsatoe", "dvenadtsatoe", "trinadtsatoe", "chetirnadtsatoe", "pyatnadtsatoe", 
+"shestnadsatoe", "semnadtsatoe", "vosemnadtsatoe", "devyatnadtsatoe", "dvadtsatoe", "dvadtsat' pervoe", 
+"dvadtsat' vtoroe", "dvadtsat' tret'e", "dvadtsat' chetvertoe", "dvadtsat' pyatoe", "dvadtsat' shestoe", 
+"dvadtsat' sed'moe", "dvadtsat' vos'moe", "dvadtsat' devyatoe", "tridtsatoe", "tridtsat' pervoe"};
+    string month[12]={"yanvarya", "fevralya", "marta", "aprelya", "maya", "iunya", "iulya", "avgusta", 
+"sentyabrya", "oktyabrya", "noyabrya", "dekabrya"};
+    cout<<day[x-1]<<" "<<month[y-1]; }
+    else cout<<"error 404";
+    return 0;
+    }
