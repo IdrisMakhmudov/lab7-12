@@ -7,8 +7,8 @@ int main()
 int A,B,C,x,y;
 cout<<"Enter A,B and C: \n";
 cin>>A>>B>>C;
-if (A>B) {if (B>C) {x=A; y=B} else }
-else {A=0; B=0;}
-cout<<"A: "<<A<<"\nB: "<<B;
+if (A>B) {x=A; if (B>C) y=B; else y=C; }
+else {x=B; if(A>C) y=A; else y=C; }
+cout<<x+y;
 return 0;
 }
