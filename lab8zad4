@@ -1,1 +1,17 @@
+/* 4. Даны координаты точки, не лежащей на координатных осях OX и
+OY. Определить номер координатной четверти, в которой находится данная
+точка */
+#include <iostream>
+using namespace std;
 
+int main() {
+    int x1,y1;
+    cout<<"Enter coordinates of point (x1,y1): ";
+    cin>>x1>>y1;
+    if(x1==0||y1==0) cout<<"error 404";
+    else {
+        if(x1>0) {if(y1>0) cout<<"1"; else cout<<"4";}
+        else {if(y1>0) cout<<"2"; else cout<<"3";}
+        }
+    return 0;
+    }
