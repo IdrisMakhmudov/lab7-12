@@ -1,0 +1,19 @@
+/* 5. Дано целое число. Вывести его строку-описание вида
+«отрицательное четное число», «нулевое число», «положительное нечетное
+число» и т. д. */
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x;
+    cin>>x;
+    if(x==0) cout<<"nulevoe";
+    else {
+        if(x>0) cout<<"polojitelnoe";
+        else cout<<"otritsatel'noe";
+        if(x%2==0) cout<<" chetnoe";
+        else cout<<" nechetnoe";
+        }
+        cout<<" chislo.";
+    return 0;
+    }
