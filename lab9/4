@@ -1,0 +1,18 @@
+/* 4. Дано целое число в диапазоне 100–999. Вывести строку-описание
+данного числа, например: 256 — «двести пятьдесят шесть», 814 —
+«восемьсот четырнадцать» */
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+//N-север,S-юг,W-запад,E-восток
+
+int main() {
+int a;
+cin>>a;
+string sotni[9]={"sto","dvesti"}
+string desyatki[9]
+string edinici[9]
+string iskl[9]
+return 0;
+} 
