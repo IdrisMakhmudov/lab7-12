@@ -12,7 +12,7 @@ using namespace std;
 int main() {
     int a,b;
     char x;
-    string direct[4]={'N','W','S','E'};
+    string direct[4]={"N","W","S","E"};
     cin>>x;
 if(x=='N') b=0;
 if(x=='W') b=1;
