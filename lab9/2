@@ -10,22 +10,23 @@ using namespace std;
 //N-север,S-юг,W-запад,E-восток
 
 int main() {
-    int a,b;
-    char x;
-    string direct[4]={"N","W","S","E"};
-    cin>>x;
+int a,b;
+char x;
+char direct[4]={'N','W','S','E'};
+cin>>x;
 if(x=='N') b=0;
 if(x=='W') b=1;
 if(x=='S') b=2;
 if(x=='E') b=3;
 if(x!='N'&&x!='W'&&x!='S'&&x!='E') {cout<<"Error 404"; return 1;}
-   cin>>a;
-    if(a<=1||a>=-1) 
-      {
-        if(a==-1) {if(b==3) b=0;} else b++;
-        if(a==1) {if(b==0) b+=3;} else b--; 
-      }
-        else {  cout<<"Error 404";   }
-    cout<<direct[b];
-    return 0;
-    }
+cin>>a;
+if(a<=1||a>=-1)
+{
+if(a==-1) b--;
+if(a==1) b++;
+} else { cout<<"Error 404"; }
+if(b==4) b=0;
+if(b==-1) b=3;
+cout<<direct[b];
+return 0;
+} 
