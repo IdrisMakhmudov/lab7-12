@@ -1,0 +1,19 @@
+/* 3. Дано целое число в диапазоне 10–40, определяющее количество
+учебных заданий по некоторой теме. Вывести строку-описание указанного
+количества заданий, обеспечив правильное согласование числа со словами
+«учебное задание», например: 18 — «восемнадцать учебных заданий». */
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string day[31]={"desyat'","odinnatsat'","dvenatsat'","trinatsat'","chetirnadtsat'","pyatnadtsat'","shestnadtsat'","semnadtsat'","vosemnadtsat'","devyatnadtsat'", "dvadtsat'","dvadtsat' odno","dvadtsat' dva", "dvadtsat' tri", "dvadtsat' chetire", "dvadtsat' pyat'", "dvadtsat' shest'","dvadtsat' sem'","dvadtsat' vosem'","dvadtsat' devyat'","tridsat'","tridsat' odno","tridsat' dva","tridsat' tri","tridsat' chetire","tridsat' pyat'","tridsat' shest'","tridsat' sem'","tridsat' vosem'","tridsat' devyat'","sorok";}
+    int a;
+    cin>>a;
+    if (a<=20||(a>=25&&a<=30)||a>=35) cout<<day[a-1]<<" zadanii";
+    else {
+    if (a%10==1) cout<<day[a-1]<<" zadanie"; 
+    else 
+    cout<<day[a-1]<<" zadaniya"; }
+    return 0;
+}
