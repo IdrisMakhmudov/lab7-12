@@ -1,0 +1,28 @@
+/* 1. Даны целые положительные числа A и B (A < B). Вывести все целые
+числа от A до B включительно; при этом каждое число должно выводиться
+столько раз, каково его значение (например, число 3 выводится 3 раза). */
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() 
+{
+int A,B,n;
+cin>>A>>B;
+if(A>0&&B>A) 
+ {
+  for(int i=A; i<=B;i++) 
+      {
+    n=i;  
+    while(n>0) 
+          {
+              cout<<i;
+              n--;
+          }
+          cout<<endl;
+      }  
+ }
+ else
+ cout<<"Invalid values";
+return 0;
+}
