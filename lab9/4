@@ -5,14 +5,25 @@
 #include <cmath>
 using namespace std;
 
-//N-север,S-юг,W-запад,E-восток
-
 int main() {
-int a;
+int a,sot,des,ed;
 cin>>a;
-string sotni[9]={"sto","dvesti"}
-string desyatki[9]
-string edinici[9]
-string iskl[9]
+string sotni[9]={"sto","dvesti","trista","chetiresta","pyatsot","shestsot","semsot","vosemsot","devyatsot"};
+string desyatki[8]={"dvadtsat'","tridtsat'","sorok","pyatdesyat","shestdesyat","semdesyat","vosemdesyat","devyanosto"};
+string edinici[9]={"odin","dva","tri","chetire","pyat'","shest'","sem'","vosem'","devyat'"};
+string iskl[10]={"desyat","odinnadtsat'","dvenadtsat'","trinadtsat'","chetirnadtsat'","pyatnadtsat'","shestnadtsat'","semnadtsat'","vosemnadtsat'","devyatnadtsat'"};
+if(a>=100&&a<=999)
+{ sot=a/100;
+  des=(a%100)/10;
+  ed=a%10;
+  cout<<sotni[sot-1]<<' ';
+  if(des>1) {cout<<desyatki[des-2]<<' '; cout<<edinici[ed-1];} 
+  else 
+  {
+  if(des=1) cout<<iskl[ed];
+  if(des=0) cout<<edinici[ed-1]; 
+  } 
+ }
+    else cout<<"Invalid values";
 return 0;
 } 
