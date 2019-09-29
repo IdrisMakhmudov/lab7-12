@@ -1,0 +1,27 @@
+/*
+5. Даны целые положительные числа A и B. Найти их наибольший
+общий делитель (НОД), используя алгоритм Евклида
+*/
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() 
+{
+int A,B;
+cout<<"Enter A and B: ";
+cin>>A>>B;
+if(A>0&&B>0) 
+ { 
+     while(A!=B)
+     {
+         if(A>B) A-=B;
+         else
+         B-=A;
+     }
+     cout<<A;
+ }
+ else
+ cout<<"Invalid values";
+return 0;
+}
