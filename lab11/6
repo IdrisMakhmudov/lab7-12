@@ -1,0 +1,27 @@
+/*
+6. Дано целое число N (> 1), являющееся числом Фибоначчи: N = F№k .
+Найти целое число K — порядковый номер числа Фибоначчи N.
+*/
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() 
+{
+int N,K,F,m,n;
+cin>>N;
+m=0; n=1; K=2;
+while(F<N)
+{
+    F=m+n;
+    m=n;
+    n=F;
+    K++;
+}
+if(F==N) 
+cout<<K;
+else 
+cout<<"Invalid values";
+;
+return 0;
+}
