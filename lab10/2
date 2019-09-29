@@ -1,0 +1,24 @@
+/* 2. Дано целое число N (N > 0). Найти произведение 1.1 · 1.2 · 1.3 · . . . (N
+сомножителей). */
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int N;
+double m,n;
+cin>>N;
+m=1.1;
+n=1;
+if(N>0) 
+{
+    for(double i=1; i<=N; i++) 
+    {
+     n=n*m;
+     m+=0.1;
+    }
+    cout<<n;
+}
+    else 
+    cout<<"Invalid values";
+}
