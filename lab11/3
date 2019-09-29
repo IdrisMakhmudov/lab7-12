@@ -1,0 +1,26 @@
+/*
+3. Дано целое число N (> 1). Вывести наименьшее из целых чисел K,
+для которых сумма 1 + 2 + . . . + K будет больше или равна N, и саму эту
+сумму.
+*/
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() 
+{
+int N,K,n;
+cin>>N;
+n=0;
+if(N>1) 
+ { 
+    for(K=1; n<N; K++)
+    {
+        n+=K;
+    }
+    cout<<"K="<<K<<endl<<"Sum="<<n;
+ }
+ else
+ cout<<"Invalid values";
+return 0;
+}
