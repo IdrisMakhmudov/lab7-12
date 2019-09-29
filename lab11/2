@@ -1,0 +1,27 @@
+/*
+2. Даны положительные числа A и B (A > B). На отрезке длины A
+размещено максимально возможное количество отрезков длины B (без
+наложений). Не используя операции умножения и деления, найти длину
+незанятой части отрезка A. 
+*/
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() 
+{
+double A,B,n;
+cin>>A>>B;
+n=A;
+if(B>0&&B<A) 
+ {
+     while(n>0)
+     {
+        n-=B; 
+     }
+      cout<<n+B;
+ }
+ else
+ cout<<"Invalid values";
+return 0;
+}
