@@ -1,0 +1,28 @@
+/* 5. Дано вещественное число A и целое число N (> 0). Используя один
+цикл, найти значение выражения
+1 − A + A^2 − A^3 + . . . ± A^N .
+Условный оператор не использовать. */
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() 
+{
+    double A;
+    int N,m,n;
+    cout<<"Enter A: "; cin>>A;
+    cout<<"Enter N: "; cin>>N;
+    m=1;
+    if(N>0)
+    {
+        for (int i=1; i<=N; i++)
+        {
+            n=pow(-A,i);
+            m+=n;
+        }
+        cout<<m;
+    }
+    else
+    cout<<"Invalid values";
+    return 0;
+}
