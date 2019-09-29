@@ -1,0 +1,25 @@
+/* 4. Дано вещественное число A и целое число N (> 0). Используя один
+цикл, найти сумму 1 + A + A^2 + A^3 + . . . + A^N */
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+int N;
+double A,n,m;
+cout<<"Enter A: "; cin>>A;
+cout<<"Enter N: "; cin>>N;
+m=1;
+if(N>0) 
+{
+    for(double i=1; i<=N; i++) 
+    {
+     n=pow(A,i);
+     m+=n;
+    }
+    cout<<m<<"\n";
+}
+    else 
+    cout<<"Invalid values";
+}
