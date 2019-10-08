@@ -8,12 +8,16 @@ int main() {
     int x;
     cin>>x;
     if (x>=0&&x<=999)
-    { if(x==0) cout<<"nulevoe";
-    else {
-        if(x%2==0) cout<<"chetnoe"; else cout<<"nechetnoe";
-        if(x>=100) cout<<" trehznachnoe"; else cout<<" dvuznachnoe";
-        cout<<" chislo.";
+    { 
+    if(x==0) cout<<"nulevoe";
+    else 
+        {
+         if(x%2==0) cout<<"chetnoe"; else cout<<"nechetnoe";
+         if(x>=100) cout<<" trehznachnoe"; else cout<<" dvuznachnoe";
+         cout<<" chislo.";
+        }
     }
+    else
     cout<<"Error 404";
     return 0;
     }
