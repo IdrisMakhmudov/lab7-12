@@ -14,16 +14,12 @@ int main()
 int a,col,anim;
 cin>>a;
 string color[5]={"zeleno","krasno","jelto","belo","cherno"};
-string animal[12]={"krisi","korovi","tigra","zaica","drakona","zmei","loshadi","ovci","obez'yani","kurici","sobaki","svin'i",};
+string animal[12]={"i krisi","i korovi","go tigra","go zaica","go drakona","i zmei","i oshadi","i ovci","i obez'yani","i kurici","i sobaki","i svin'i",};
 if(a>=0) {
     col=((a-4)%60)/12;
     anim=((a-4)%60)%12;
-    cout<<"god ";
-    cout<<color[col];
-    if(anim!=2 && anim!=3 && anim!=4) cout<<"i ";
-    else cout<<"go ";
-    cout<<animal[anim];
+    cout<<"God "<<color[col]<<animal[anim];
 }
 else cout<<"Invalid values";
 }
-
+FIX IT FIX IT FIX IT FIX IT FIX IT
