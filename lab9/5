@@ -1,9 +1,11 @@
-/* 5. В восточном календаре принят 60-летний цикл, состоящий из 12-
+/*
+5. В восточном календаре принят 60-летний цикл, состоящий из 12-
 летних подциклов, обозначаемых названиями цвета: зеленый, красный,
 желтый, белый и черный. В каждом подцикле годы носят названия
 животных: крысы, коровы, тигра, зайца, дракона, змеи, лошади, овцы,
 обезьяны, курицы, собаки и свиньи. По номеру года определить его название,
-если 1984 год — начало цикла: «год зеленой крысы». */
+если 1984 год — начало цикла: «год зеленой крысы». 
+*/
 #include <iostream>
 #include <cmath>
 #include <string>
@@ -11,15 +13,14 @@ using namespace std;
 
 int main()
 {
-int a,col,anim;
-cin>>a;
-string color[5]={"zeleno","krasno","jelto","belo","cherno"};
-string animal[12]={"i krisi","i korovi","go tigra","go zaica","go drakona","i zmei","i oshadi","i ovci","i obez'yani","i kurici","i sobaki","i svin'i",};
-if(a>=0) {
-    col=((a-4)%60)/12;
-    anim=((a-4)%60)%12;
-    cout<<"God "<<color[col]<<animal[anim];
+	int a, col, anim;
+	cin >> a;
+	string color[6] = { "zeleno","krasno","jelto","belo","sine","cherno" };
+	string animal[12] = { "i krisi","i korovi","go tigra","go zaica","go drakona","i zmei","i oshadi","i ovci","i obez'yani","i kurici","i sobaki","i svin'i", };
+	if (a >= 0) {
+		col = ((a - 4) % 12) / 2;
+		anim = ((a - 4) % 60) % 12;
+		cout << "God " << color[col] << animal[anim];
+	}
+	else cout << "Invalid values";
 }
-else cout<<"Invalid values";
-}
-FIX IT FIX IT FIX IT FIX IT FIX IT
