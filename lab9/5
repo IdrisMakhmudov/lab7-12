@@ -16,7 +16,7 @@ int main()
 	int a, col, anim;
 	cin >> a;
 	string color[6] = { "zeleno","krasno","jelto","belo","sine","cherno" };
-	string animal[12] = { "i krisi","i korovi","go tigra","go zaica","go drakona","i zmei","i oshadi","i ovci","i obez'yani","i kurici","i sobaki","i svin'i", };
+	string animal[12] = { "i krisi","i korovi","go tigra","go zaica","go drakona","i zmei","i loshadi","i ovci","i obez'yani","i kurici","i sobaki","i svin'i", };
 	if (a >= 0) {
 		col = ((a - 4) % 12) / 2;
 		anim = ((a - 4) % 60) % 12;
