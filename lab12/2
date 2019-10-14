@@ -23,7 +23,7 @@ int Sign()
 cout<<x;
 }
 
-int main() 
+int main()
 {
 double A,B;
 Sign(A, B);
@@ -31,4 +31,4 @@ cout<<A+B;
 return 0;
 }
 
-ПОЧИНИ ЭТО
+fix it
