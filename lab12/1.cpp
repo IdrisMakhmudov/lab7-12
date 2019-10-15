@@ -16,10 +16,9 @@ void PowerA3()
     cout<<B<<endl;
 }
 
-int main() 
+int main()
 {
 for(int i=1; i<=5; i++)
 PowerA3();
 return 0;
 }
-
