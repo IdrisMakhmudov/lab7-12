@@ -9,7 +9,7 @@
 #include <cmath>
 using namespace std;
 
-double Sign(double SAM)
+double Sign()
 {
   cin >> SAM;
     if (SAM < 0) SAM = -1;
