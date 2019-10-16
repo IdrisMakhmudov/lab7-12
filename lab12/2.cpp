@@ -9,26 +9,22 @@
 #include <cmath>
 using namespace std;
 
-int Sign()
+double Sign(double SAM)
 {
-    double x;
-    cin>>x;
-    if (x<0) x=-1;
+  cin >> SAM;
+    if (SAM < 0) SAM = -1;
     else
     {
-        if(x==0) x=0;
+        if(SAM == 0) SAM = 0;
         else
-        x=1;
+        SAM = 1;
     }
-cout<<x;
 }
 
 int main()
 {
-double A,B;
-Sign(A, B);
-cout<<A+B;
+  double A;
+Sign(A);
+cout << A;
 return 0;
 }
-
-fix it
